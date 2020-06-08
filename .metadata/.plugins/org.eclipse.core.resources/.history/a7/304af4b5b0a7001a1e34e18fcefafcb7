@@ -1,0 +1,5 @@
+package com.pk.batch.BatchDemo.configuration;
+
+public class BatchConfiguration {
+
+}

@@ -1,0 +1,38 @@
+package com.pk.batch.BatchDemo.configuration;
+
+import javax.batch.api.chunk.ItemProcessor;
+import javax.batch.api.chunk.ItemReader;
+import javax.batch.api.chunk.ItemWriter;
+
+import org.springframework.batch.core.Job;
+import org.springframework.batch.core.Step;
+import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
+import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
+import org.springframework.batch.core.launch.support.RunIdIncrementer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BatchConfiguration {
+
+	@Bean
+	public Job job(JobBuilderFactory jobBuilderFactory, StepBuilderFactory stepBuilderFactory,
+			ItemReader itemReader, ItemProcessor itemPocessor, 
+			ItemWriter<User> itemWriter) {
+			
+		Step flow =stepBuilderFactory.get("Step-1")
+				.chunk(100)
+				.reader(getReader())
+				.;
+		jobBuilderFactory.get("ETL-Load")	
+				.incrementer(new RunIdIncrementer())
+				.start(flow)
+				.build();
+		
+		
+		
+	}
+	public ItemReader getReader() {
+		
+	}
+}

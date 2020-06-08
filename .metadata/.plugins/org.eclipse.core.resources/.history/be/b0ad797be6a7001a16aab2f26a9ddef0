@@ -1,0 +1,8 @@
+package com.pk.batch.BatchDemo.configuration;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class BatchConfiguration {
+
+}

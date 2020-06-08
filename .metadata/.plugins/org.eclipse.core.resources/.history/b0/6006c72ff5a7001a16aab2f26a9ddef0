@@ -1,0 +1,17 @@
+package com.pk.batch.BatchDemo.Batch;
+
+import java.util.List;
+
+import org.springframework.batch.item.ItemWriter;
+
+import com.pk.batch.BatchDemo.model.User;
+
+public class DBWriter implements ItemWriter<User> {
+
+	@Override
+	public void write(List<User> items) throws Exception {
+		
+		
+	}
+
+}

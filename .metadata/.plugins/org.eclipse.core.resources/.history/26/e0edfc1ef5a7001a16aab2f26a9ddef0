@@ -1,0 +1,7 @@
+package com.pk.batch.BatchDemo.Batch;
+
+import org.springframework.batch.item.ItemWriter;
+
+public class DBWriter implements ItemWriter<T> {
+
+}

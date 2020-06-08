@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;beanWrapper&apos; in &apos;com.pk.batch.BatchDemo.configuration.BatchConfiguration.getLineMapper()&apos; to &apos;filedSetMapper&apos;&#x0A;- Original project: &apos;BatchDemo&apos;&#x0A;- Original element: &apos;com.pk.batch.BatchDemo.configuration.BatchConfiguration.getLineMapper().beanWrapper&apos;&#x0A;- Renamed element: &apos;beanWrapper&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;beanWrapper&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.pk.batch.BatchDemo.configuration{BatchConfiguration.java[BatchConfiguration~getLineMapper@beanWrapper!2401!2480!2433!2443!QBeanWrapperFieldSetMapper\&lt;QUser;&gt;;!0!false" name="filedSetMapper" references="true" stamp="1591447741152" version="1.0"/>
+</session>

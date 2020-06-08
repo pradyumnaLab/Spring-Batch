@@ -1,0 +1,5 @@
+package com.pk.batch.BatchDemo.repository;
+
+public class UserDao {
+
+}

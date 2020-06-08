@@ -1,0 +1,17 @@
+package com.pk.batch.BatchDemo.Batch;
+
+import org.springframework.batch.item.ItemProcessor;
+
+import com.pk.batch.BatchDemo.model.User;
+
+public class Processor implements ItemProcessor<User, User> {
+
+	@Override
+	public User process(User item) throws Exception {
+
+		if (item.getSalary() < 15000)
+			item.setSalary(8000);
+		return item;
+
+	}
+}
