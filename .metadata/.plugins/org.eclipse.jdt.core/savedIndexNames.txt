@@ -69,7 +69,6 @@ INDEX VERSION 1.131+/home/ubuntu/Projects/Spring Batch/.metadata/.plugins/org.ec
 572956445.index
 223062928.index
 2892107613.index
-3653804365.index
 3261611016.index
 2253559101.index
 1756597791.index
